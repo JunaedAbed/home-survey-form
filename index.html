@@ -1,0 +1,55 @@
+# home-survey-form
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Home Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+      <main>
+        <body>
+        <header>
+          <h1 id="title">Home Survey Form</h1>
+          <p id="description">Thanks for taking the time</p>
+          <form id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input id="name" type="text" class="form-control" placeholder="Enter your name" required/>
+              <label id="email-label" for="email">Email</label>
+              <input id="email" type="email" class="form-control" placeholder="Enter your email" required/>
+              <label id="number-label" for="number">Age<span class="clue"></span></label>
+              <input id="number" type="number" class="form-control" min="18" max="30" placeholder="Enter your age" required/>
+              <p>What is your current role?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="father">Father</option>
+                <option value="mother">Mother</option>
+                <option value="son">Son</option>
+                <option value="daughter">Daughter</option>
+                <option value="other">Other</option>
+              </select>
+              <p>Would you recommend this home to anyone?</p>
+              <label>
+                <input name="recommend" value="yes" type="radio" class="input-radio" checked/>Yes</label>
+              <label>
+                <input name="recommend" value="no" type="radio" class="input-radio" />No</label>
+              <label>
+                <input name="recommend" value="maybe" type="radio" class="input-radio" />May be</label>
+              <p>What should be improved?<span class="clue">(Check all that apply)</span></p>
+              <label>
+                <input name="prefer" value="food" type="checkbox" class="input-checkbox"/>Food
+              </label>
+              <label>
+                <input name="prefer" value="behaviour" type="checkbox" class="input-checkbox"/>Behaviour
+              </label>
+              <label>
+                <input name="prefer" value="care" type="checkbox" class="input-checkbox"/>Care
+              </label>
+              <p>Any suggestion?</p>
+              <textarea class="input-textarea" ></textarea>
+              <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+          </form>
+        </header>
+        </body> 
+  </main>
+</html>  
